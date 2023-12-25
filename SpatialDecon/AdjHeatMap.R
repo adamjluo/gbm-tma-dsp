@@ -1,0 +1,11 @@
+library(SpatialDecon)
+library(pheatmap)
+library(viridis)
+library(scales)
+library(openxlsx)
+library(dplyr)
+library(readxl)
+library(circlize)
+
+data <- read_excel("/Users/adamluo/Desktop/College/Lab [Shenderov]/Data Analysis/gbm-tma-dsp/SpatialDecon/BrainDeconResult.xlsx", sheet="Abundance scores")
+data <- data.frame(data)
